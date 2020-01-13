@@ -3,7 +3,9 @@
 # Smallest base image
 FROM alpine:latest
 
-LABEL maintainer="Kyle Manna <kyle@kylemanna.com>"
+# Previous maintainer:
+# LABEL maintainer="Kyle Manna <kyle@kylemanna.com>"
+LABEL maintainer="Pete Wilcox <petercwilcox@gmail.com>"
 
 # Testing: pamtester
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories && \

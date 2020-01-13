@@ -19,6 +19,7 @@ nopass=$1
 easyrsa init-pki
 
 # Create a new random file
+mkdir -p /etc/openvpn/pki
 dd if=/dev/random of=/etc/openvpn/pki/.rnd bs=1024 count=1
 
 # CA always has a password for protection in event server is compromised. The
